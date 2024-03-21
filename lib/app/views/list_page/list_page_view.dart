@@ -98,7 +98,7 @@ class ListPage extends GetView<ListPageController> {
           CustomButton(
             width: Get.width * .5,
             height: Get.height * .05,
-            buttonText: "Apply",
+            buttonText: LocaleKeys.apply.tr,
             onPress: () async {
               controller.hasMoreData = true;
               controller.resetPageNumber();
@@ -119,7 +119,7 @@ class ListPage extends GetView<ListPageController> {
       ),
       child: DropdownMenu(
           controller: controller.controllerList[FilterFields.genders],
-          label: CustomText("Gender"),
+          label: CustomText(LocaleKeys.gender.tr),
           dropdownMenuEntries: [
             DropdownMenuEntry(
               label: Genders.female.text,
@@ -148,7 +148,7 @@ class ListPage extends GetView<ListPageController> {
       ),
       child: DropdownMenu(
           controller: controller.controllerList[FilterFields.status],
-          label: CustomText("Status"),
+          label: CustomText(LocaleKeys.status.tr),
           dropdownMenuEntries: [
             DropdownMenuEntry(
               label: Status.alive.text,
@@ -169,7 +169,7 @@ class ListPage extends GetView<ListPageController> {
   CustomTextField _type() {
     return CustomTextField(
         contentPadding: EdgeInsets.all(StandartMeasurementUnits.normalPadding),
-        label: "Type",
+        label: LocaleKeys.type.tr,
         controller: controller.controllerList[FilterFields.type],
         color: ColorTable.primaryColor);
   }
@@ -177,7 +177,7 @@ class ListPage extends GetView<ListPageController> {
   CustomTextField _species() {
     return CustomTextField(
         contentPadding: EdgeInsets.all(StandartMeasurementUnits.normalPadding),
-        label: "Species (Human, Alien, etc.)",
+        label: LocaleKeys.species.tr,
         controller: controller.controllerList[FilterFields.species],
         color: ColorTable.primaryColor);
   }

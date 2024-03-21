@@ -4,5 +4,17 @@
     "locations":"Locations",
     "settings":"Settings",
     "change_language":"Change Language",
-    "change_theme":"Change Theme"
+    "change_theme":"Change Theme",
+    "species":"Species (Human, Alien, etc.)",
+    "type":"Type",
+    "status":"Status",
+    "gender":"Gender",
+    "apply":"Apply",
+    "alive":"Alive",
+    "dead":"Dead",
+    "unknown":"Unknown",
+    "female":"Female",
+    "male":"Male",
+    "genderless":"Genderless"
+
 }

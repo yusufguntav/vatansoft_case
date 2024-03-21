@@ -4,5 +4,16 @@
     "locations":"Mekanlar",
     "settings":"Ayarlar",
     "change_language":"Dil Değiştir",
-    "change_theme":"Tema Değiştir"
+    "change_theme":"Tema Değiştir",
+    "species": "Tür (İnsan, Uzaylı, vb.)",
+    "type": "Tür",
+    "status": "Durum",
+    "gender": "Cinsiyet",
+    "apply": "Uygula",
+    "alive": "Canlı",
+    "dead": "Ölü",
+    "unknown": "Bilinmiyor",
+    "female": "Dişi",
+    "male": "Erkek",
+    "genderless": "Cinsiyetsiz"
 }

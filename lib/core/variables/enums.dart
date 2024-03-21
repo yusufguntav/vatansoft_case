@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:vatansoft_case/generated/locales.g.dart';
 
 enum Images {
   portalRNM,
@@ -57,13 +58,13 @@ enum Genders {
   String get text {
     switch (this) {
       case Genders.female:
-        return 'Female';
+        return LocaleKeys.female.tr;
       case Genders.male:
-        return 'Male';
+        return LocaleKeys.male.tr;
       case Genders.genderless:
-        return 'Genderless';
+        return LocaleKeys.genderless.tr;
       case Genders.unknown:
-        return 'Unknown';
+        return LocaleKeys.unknown.tr;
     }
   }
 }
@@ -76,11 +77,11 @@ enum Status {
   String get text {
     switch (this) {
       case Status.alive:
-        return 'Alive';
+        return LocaleKeys.alive.tr;
       case Status.dead:
-        return 'Dead';
+        return LocaleKeys.dead.tr;
       case Status.unknown:
-        return 'Unknown';
+        return LocaleKeys.unknown.tr;
     }
   }
 }

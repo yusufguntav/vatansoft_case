@@ -17,6 +17,17 @@ class LocaleKeys {
   static const settings = 'settings';
   static const change_language = 'change_language';
   static const change_theme = 'change_theme';
+  static const species = 'species';
+  static const type = 'type';
+  static const status = 'status';
+  static const gender = 'gender';
+  static const apply = 'apply';
+  static const alive = 'alive';
+  static const dead = 'dead';
+  static const unknown = 'unknown';
+  static const female = 'female';
+  static const male = 'male';
+  static const genderless = 'genderless';
 }
 
 class Locales {
@@ -27,6 +38,17 @@ class Locales {
     'settings': 'Ayarlar',
     'change_language': 'Dil Değiştir',
     'change_theme': 'Tema Değiştir',
+    'species': 'Tür (İnsan, Uzaylı, vb.)',
+    'type': 'Tür',
+    'status': 'Durum',
+    'gender': 'Cinsiyet',
+    'apply': 'Uygula',
+    'alive': 'Canlı',
+    'dead': 'Ölü',
+    'unknown': 'Bilinmiyor',
+    'female': 'Dişi',
+    'male': 'Erkek',
+    'genderless': 'Cinsiyetsiz',
   };
   static const en_US = {
     'characters': 'Characters',
@@ -35,5 +57,16 @@ class Locales {
     'settings': 'Settings',
     'change_language': 'Change Language',
     'change_theme': 'Change Theme',
+    'species': 'Species (Human, Alien, etc.)',
+    'type': 'Type',
+    'status': 'Status',
+    'gender': 'Gender',
+    'apply': 'Apply',
+    'alive': 'Alive',
+    'dead': 'Dead',
+    'unknown': 'Unknown',
+    'female': 'Female',
+    'male': 'Male',
+    'genderless': 'Genderless',
   };
 }
