@@ -4,7 +4,7 @@ import 'package:vatansoft_case/app/routes/pageRoutes.dart';
 class SplashScreenController extends GetxController {
   @override
   void onReady() {
-    Future.delayed(const Duration(seconds: 2)).then((value) async => await Get.offAndToNamed(PageRoutes.home));
+    Future.delayed(const Duration(seconds: 1)).then((value) async => await Get.offAndToNamed(PageRoutes.home));
     super.onReady();
   }
 }

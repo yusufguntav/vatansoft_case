@@ -6,7 +6,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-//TODO inceleme
 class CustomColorSelectionHandle extends TextSelectionControls {
   CustomColorSelectionHandle(this.handleColor)
       : _controls = Platform.isIOS ? cupertinoTextSelectionControls : materialTextSelectionControls;

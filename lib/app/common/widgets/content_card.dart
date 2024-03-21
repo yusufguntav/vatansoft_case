@@ -1,3 +1,5 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:vatansoft_case/core/variables/color_table.dart';
@@ -18,13 +20,11 @@ class ContentCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      //TODO unconrained box
       child: UnconstrainedBox(
         child: SizedBox(
           width: width ?? Get.width * 0.6,
           child: Card(
             semanticContainer: false,
-            //TODO lerp
             shape: ShapeBorder.lerp(
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(StandartMeasurementUnits.normalRadius)),
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(StandartMeasurementUnits.normalRadius)),

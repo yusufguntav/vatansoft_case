@@ -15,7 +15,6 @@ class BottomNavBarController extends GetxController {
   final List<String> _mainPageRoutes = [PageRoutes.home, PageRoutes.settings];
 
   changePage(index) {
-    //TODO isoverlayopen
     if (Get.isOverlaysOpen) return;
     if (Get.currentRoute == _mainPageRoutes[index]) return;
     Get.offAllNamed(_mainPageRoutes[index]);

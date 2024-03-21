@@ -42,7 +42,6 @@ class ListPageController extends GetxController {
     _pageNumber = 1;
   }
 
-  //TODO page number yapısını kontrol edersin
   incrementPageNumber() {
     _pageNumber++;
   }

@@ -1,7 +1,5 @@
 import 'package:hive/hive.dart';
 
-import '../../variables/enums.dart';
-
 part 'preferences.g.dart';
 
 @HiveType(typeId: 1)

@@ -28,7 +28,6 @@ class LanguageService extends GetxService {
       currentLocale = Get.deviceLocale ?? fallbackLocale;
     }
 
-    print('Current Locale: $currentLocale');
     super.onInit();
   }
 
