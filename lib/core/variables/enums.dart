@@ -47,3 +47,40 @@ enum CustomFonts {
 enum ThemeType { light, dark }
 
 enum LanguageType { english, turkish }
+
+enum Genders {
+  female,
+  male,
+  genderless,
+  unknown;
+
+  String get text {
+    switch (this) {
+      case Genders.female:
+        return 'Female';
+      case Genders.male:
+        return 'Male';
+      case Genders.genderless:
+        return 'Genderless';
+      case Genders.unknown:
+        return 'Unknown';
+    }
+  }
+}
+
+enum Status {
+  alive,
+  dead,
+  unknown;
+
+  String get text {
+    switch (this) {
+      case Status.alive:
+        return 'Alive';
+      case Status.dead:
+        return 'Dead';
+      case Status.unknown:
+        return 'Unknown';
+    }
+  }
+}

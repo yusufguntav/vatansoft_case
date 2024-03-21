@@ -10,21 +10,25 @@ enum FilterFields {
   name,
   type,
   species,
+  genders,
+  status,
 }
 
 class ListPageController extends GetxController {
   //Controllers
-
   final Map<FilterFields, TextEditingController> _controllerList = {
     FilterFields.name: TextEditingController(),
     FilterFields.species: TextEditingController(),
     FilterFields.type: TextEditingController(),
+    FilterFields.genders: TextEditingController(),
+    FilterFields.status: TextEditingController(),
   };
   Map<FilterFields, TextEditingController> get controllerList => _controllerList;
 
   //Has more data control
   final Rx<bool> _hasMoreData = true.obs;
   bool get hasMoreData => _hasMoreData.value;
+  set hasMoreData(bool value) => _hasMoreData.value = value;
   //Scroll controller
   final ScrollController _scrollController = ScrollController();
   ScrollController get scrollController => _scrollController;
@@ -71,8 +75,13 @@ class ListPageController extends GetxController {
     errorHandler(
       tryMethod: () async {
         if (!hasMoreData) return;
-        CharacterListModel? characterList =
-            await _networkService.getCharactersByPageNumber(_pageNumber, controllerList[FilterFields.name]?.text);
+        CharacterListModel? characterList = await _networkService.getCharactersPageByPage(
+            _pageNumber,
+            controllerList[FilterFields.name]?.text,
+            controllerList[FilterFields.species]?.text,
+            controllerList[FilterFields.type]?.text,
+            controllerList[FilterFields.genders]?.text.toLowerCase(),
+            controllerList[FilterFields.status]?.text.toLowerCase());
         if (characterList == null) {
           _hasMoreData.value = false;
           return;
