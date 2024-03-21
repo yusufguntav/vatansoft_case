@@ -1,0 +1,1 @@
+enum StorageKeys { preferences }
