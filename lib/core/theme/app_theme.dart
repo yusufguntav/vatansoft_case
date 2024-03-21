@@ -23,6 +23,7 @@ class AppTheme {
   );
 
   static ThemeData dark = ThemeData(
+    dialogBackgroundColor: ColorTable.scaffoldColorDark,
     appBarTheme: AppBarTheme(
         titleTextStyle: TextStyle(
       fontFamily: CustomFonts.rickAndMorty.font,
