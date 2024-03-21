@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:vatansoft_case/core/variables/color_table.dart';
 
-import '../../../core/variables/standartMeasurementUnits.dart';
+import '../../../core/variables/standart_measurement_units.dart';
 import 'custom_text.dart';
 
 class ContentCard extends StatelessWidget {

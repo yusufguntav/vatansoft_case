@@ -9,7 +9,7 @@ import 'package:vatansoft_case/app/common/widgets/custom_text_field.dart';
 import 'package:vatansoft_case/app/views/list_page/list_page_controller.dart';
 import 'package:vatansoft_case/core/variables/color_table.dart';
 import 'package:vatansoft_case/core/variables/enums.dart';
-import 'package:vatansoft_case/core/variables/standartMeasurementUnits.dart';
+import 'package:vatansoft_case/core/variables/standart_measurement_units.dart';
 import 'package:vatansoft_case/generated/locales.g.dart';
 
 class ListPage extends GetView<ListPageController> {
@@ -117,7 +117,6 @@ class ListPage extends GetView<ListPageController> {
           child: CustomTextField(
             prefixIcon: const Icon(Icons.search),
             controller: controller.controllerList[FilterFields.name],
-            color: ColorTable.primaryColor,
             onchange: (p0) async {
               if (p0.length == 1) controller.resetPageNumber();
               await controller.getCharacters();

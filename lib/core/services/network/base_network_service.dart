@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:vatansoft_case/app/common/widgets/circle_animation.dart';
 import 'package:vatansoft_case/core/services/network/general_response.dart';
-import 'package:vatansoft_case/core/variables/standartMeasurementUnits.dart';
 import 'package:vexana/vexana.dart';
 
 import '../../variables/enums.dart';
+import '../../variables/standart_measurement_units.dart';
 
 class BaseNetworkService extends GetxService {
   INetworkManager networkManager = NetworkManager<GeneralResponse>(

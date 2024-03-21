@@ -5,7 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:vatansoft_case/core/variables/color_table.dart';
 import 'package:vatansoft_case/core/variables/enums.dart';
-import 'package:vatansoft_case/core/variables/standartMeasurementUnits.dart';
+import 'package:vatansoft_case/core/variables/standart_measurement_units.dart';
 
 import 'bottom_nav_bar_controller.dart';
 

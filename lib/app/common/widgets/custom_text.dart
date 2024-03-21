@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/variables/color_table.dart';
-import '../../../core/variables/standartMeasurementUnits.dart';
+import '../../../core/variables/standart_measurement_units.dart';
 
 class CustomText extends StatelessWidget {
   final String? text;
@@ -122,7 +122,7 @@ class CustomText extends StatelessWidget {
           letterSpacing: letterSpacing ?? 0,
           wordSpacing: wordSpacing ?? 0,
           fontSize: textSize ?? StandartMeasurementUnits.normalTextSize,
-          color: textColor ?? ColorTable.getTextColor,
+          color: textColor,
           decoration: underlined
               ? TextDecoration.underline
               : lineThrough

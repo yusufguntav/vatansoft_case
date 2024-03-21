@@ -7,7 +7,8 @@ import 'package:vatansoft_case/core/services/language/language_service.dart';
 import 'package:vatansoft_case/core/services/network/base_network_service.dart';
 import 'package:vatansoft_case/core/services/storage/boxes.dart';
 import 'package:vatansoft_case/core/services/storage/preferences.dart';
-import 'package:vatansoft_case/core/theme/appTheme.dart';
+import 'package:vatansoft_case/core/theme/app_theme.dart';
+import 'package:vatansoft_case/core/theme/theme_service.dart';
 import 'package:vatansoft_case/generated/locales.g.dart';
 
 import 'app/common/widgets/bottom_nav_bar/bottom_nav_bar_controller.dart';
@@ -26,6 +27,7 @@ void main() async {
 
 Future<void> initApp() async {
   Get.put(BaseNetworkService());
+  Get.put(ThemeService());
   Get.put(LanguageService());
   Get.put(BottomNavBarController());
   runApp(const MyApp());
@@ -43,6 +45,7 @@ class MyApp extends StatelessWidget {
       getPages: Pages.pages,
       initialRoute: PageRoutes.splash,
       initialBinding: SplashScreenBinding(),
+      darkTheme: AppTheme.dark,
       theme: AppTheme.light,
       title: 'Vatansoft Case',
       routingCallback: (value) {

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:vatansoft_case/core/services/storage/boxes.dart';
 import 'package:vatansoft_case/core/services/storage/preferences.dart';
+import 'package:vatansoft_case/core/theme/theme_service.dart';
 import 'package:vatansoft_case/core/variables/enums.dart';
 
 import '../storage/storage_key_enums.dart';
@@ -17,7 +18,6 @@ class LanguageService extends GetxService {
   // Eğer cihazın dili desteklemediğimiz bir dilse belirttiğimiz dil döner
   static const Locale fallbackLocale = Locale('tr', 'TR');
   Locale currentLocale = const Locale('tr', 'TR');
-
   @override
   void onInit() {
     Preferences? preferences = boxPreferences.get(StorageKeys.preferences.name);
@@ -32,9 +32,14 @@ class LanguageService extends GetxService {
     super.onInit();
   }
 
+  String get getCurrentLangaugeName {
+    if (currentLocale == locales[LanguageType.english.name]) return LanguageType.english.name;
+    return LanguageType.turkish.name;
+  }
+
   Future<void> setLocale(String languageType) async {
-    await boxPreferences.put(StorageKeys.preferences.name,
-        Preferences(language: languageType, theme: Get.isDarkMode ? ThemeType.dark.name : ThemeType.light.name));
+    await boxPreferences.put(
+        StorageKeys.preferences.name, Preferences(language: languageType, theme: ThemeService.loadThemeFromStorage().name));
     await Get.updateLocale(locales[languageType] ?? fallbackLocale);
   }
 }

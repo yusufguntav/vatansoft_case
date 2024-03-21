@@ -5,7 +5,7 @@ import 'package:vatansoft_case/app/common/widgets/custom_scaffold.dart';
 import 'package:vatansoft_case/app/routes/pageRoutes.dart';
 import 'package:vatansoft_case/app/views/home_page/home_page_controller.dart';
 import 'package:vatansoft_case/core/variables/enums.dart';
-import 'package:vatansoft_case/core/variables/standartMeasurementUnits.dart';
+import 'package:vatansoft_case/core/variables/standart_measurement_units.dart';
 import 'package:vatansoft_case/generated/locales.g.dart';
 
 class HomePage extends GetView<HomePageController> {

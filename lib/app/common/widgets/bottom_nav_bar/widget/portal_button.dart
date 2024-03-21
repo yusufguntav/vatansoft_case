@@ -8,7 +8,8 @@ class PortalButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton.large(
-      onPressed: () async {},
+      backgroundColor: Colors.transparent,
+      onPressed: () {},
       child: CircleAnimation(imagePath: Images.portal.path, speed: 30),
     );
   }

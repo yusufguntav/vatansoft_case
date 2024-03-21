@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:vatansoft_case/core/variables/standartMeasurementUnits.dart';
+import 'package:vatansoft_case/core/variables/standart_measurement_units.dart';
 
 class CustomDialog extends StatelessWidget {
   const CustomDialog({super.key, required this.content, this.showCloseButton = false, this.actions});
