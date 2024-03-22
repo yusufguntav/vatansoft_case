@@ -118,7 +118,7 @@ class ListPage extends GetView<ListPageController> {
         border: Border.all(color: ColorTable.primaryColor),
       ),
       child: DropdownMenu(
-          controller: controller.controllerList[FilterFields.genders],
+          onSelected: (value) => controller.gender = value ?? '',
           label: CustomText(LocaleKeys.gender.tr),
           dropdownMenuEntries: [
             DropdownMenuEntry(
@@ -147,7 +147,7 @@ class ListPage extends GetView<ListPageController> {
         border: Border.all(color: ColorTable.primaryColor),
       ),
       child: DropdownMenu(
-          controller: controller.controllerList[FilterFields.status],
+          onSelected: (value) => controller.status = value ?? '',
           label: CustomText(LocaleKeys.status.tr),
           dropdownMenuEntries: [
             DropdownMenuEntry(

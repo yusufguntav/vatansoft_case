@@ -10,18 +10,22 @@ enum FilterFields {
   name,
   type,
   species,
-  genders,
-  status,
 }
 
 class ListPageController extends GetxController {
+  String _gender = "";
+  String get gender => _gender;
+  set gender(String val) => _gender = val;
+
+  String _status = "";
+  String get status => _status;
+  set status(String val) => _status = val;
+
   //Controllers
   final Map<FilterFields, TextEditingController> _controllerList = {
     FilterFields.name: TextEditingController(),
     FilterFields.species: TextEditingController(),
     FilterFields.type: TextEditingController(),
-    FilterFields.genders: TextEditingController(),
-    FilterFields.status: TextEditingController(),
   };
   Map<FilterFields, TextEditingController> get controllerList => _controllerList;
 
@@ -79,8 +83,8 @@ class ListPageController extends GetxController {
             controllerList[FilterFields.name]?.text,
             controllerList[FilterFields.species]?.text,
             controllerList[FilterFields.type]?.text,
-            controllerList[FilterFields.genders]?.text.toLowerCase(),
-            controllerList[FilterFields.status]?.text.toLowerCase());
+            gender,
+            status);
         if (characterList == null) {
           _hasMoreData.value = false;
           return;
