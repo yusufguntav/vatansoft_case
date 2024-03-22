@@ -1,16 +1,13 @@
 # vatansoft_case
 
-A new Flutter project.
+RICK AND MORTY APP<br/><br/>![Simulator Screenshot - iPhone 15 Pro - 2024-03-22 at 02 50 07](https://github.com/yusufguntav/vatansoft_case/assets/72694817/56adac7f-af09-4ab6-914a-c329f3f75528)
+![Simulator Screenshot - iPhone 15 Pro - 2024-03-22 at 02 50 13](https://github.com/yusufguntav/vatansoft_case/assets/72694817/00cc1d8e-b95c-4159-b6c9-eb906f9045f5)
+![Simulator Screenshot - iPhone 15 Pro - 2024-03-22 at 02 50 37](https://github.com/yusufguntav/vatansoft_case/assets/72694817/82346733-5d4f-4af1-88e2-5552bd0b7822)
 
-## Getting Started
+Dependencies
+Flutter 3.16.7
+Dart 3.2.4
+get: ^4.6.6
+vexana: ^4.0.1 
+hive: latest
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
